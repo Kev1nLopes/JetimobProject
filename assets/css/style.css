@@ -25,7 +25,7 @@ li{
 .header-content .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .header-top{
     height: 150px;
@@ -75,5 +75,7 @@ nav.header-menu{
     border-radius: 5px;
     background-color: rgb(9, 223, 9);
     align-self: center;
+    
+    
 }
 
