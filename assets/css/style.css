@@ -1,0 +1,50 @@
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --basic-green: #1dbba2;
+    --strong-green: #10917C;
+}
+
+.navbar-item a {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.basic-green {
+    color: #0fb397;
+    font-weight: 200;
+}
+
+.open-sans {
+    font-family: 'Open Sans';
+}
+
+.strong-green {
+    color: #10917C;
+    font-weight: 500;
+}
+
+button.button.btn-test:hover {
+    animation-name: btnhover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: var(--strong-green);
+    border: 1px solid var(--basic-green);
+    -webkit-box-shadow: 0px 0px 10px 3px #000000;
+    box-shadow: 0px 0px 10px 3px #000000;
+}
+
+@keyframes btnhover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
