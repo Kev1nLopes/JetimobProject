@@ -56,7 +56,12 @@ button.button.btn-normal:hover {
 }
 
 
+.revolution{
+    background: url('../img/bg-jetimob-2-1.jpg.webp');
+    background-attachment: fixed;
+    object-fit: cover;
 
+}
 
 
 
