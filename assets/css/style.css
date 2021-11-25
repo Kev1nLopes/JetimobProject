@@ -27,6 +27,13 @@
     font-weight: 500;
 }
 
+header::after {
+    background-image: url('../img/waves.svg');
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+}
+
 button.button.btn-test:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
@@ -55,34 +62,32 @@ button.button.btn-normal:hover {
     color: #7b7b7b;
 }
 
-
-.revolution{
+.revolution {
     background: url('../img/bg-jetimob-2-1.jpg.webp');
     background-attachment: fixed;
     object-fit: cover;
-
 }
-
-
 
 
 /*Animacoes */
-[data-anime]{
+
+[data-anime] {
     opacity: 0;
     transition: .3s;
 }
-[data-anime="left"]{
+
+[data-anime="left"] {
     transform: translate3d(-50px, 0, 0);
 }
-[data-anime="right"]{
+
+[data-anime="right"] {
     transform: translate3d(50px, 0, 0);
 }
 
-[data-anime].animate{
+[data-anime].animate {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
 }
-
 
 @keyframes btnhover {
     0% {
