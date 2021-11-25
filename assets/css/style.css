@@ -27,10 +27,11 @@
     font-weight: 500;
 }
 
-header::after {
+main>section::before {
     background-image: url('../img/waves.svg');
     height: 80px;
     width: 100%;
+    position: absolute;
     z-index: 10;
 }
 
@@ -66,6 +67,18 @@ button.button.btn-normal:hover {
     background: url('../img/bg-jetimob-2-1.jpg.webp');
     background-attachment: fixed;
     object-fit: cover;
+}
+
+
+/* Header svg */
+
+.custom-shape-divider-top-1637869278 {
+    position: absolute;
+    bottom: 30;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
 
