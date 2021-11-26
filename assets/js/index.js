@@ -19,10 +19,12 @@ window.addEventListener('scroll', ()=>{ debounce(animeScroll(), 200)});
 
 
 function animeScroll(){
-    const windowTop = window.scrollY + 50;
+    const windowTop = window.innerHeight - 100;
     target.forEach((el)=>{
-        if((windowTop) > el.offsetTop){
+        if((windowTop) > el.getBoundingClientRect().top){
             el.classList.add(animateClass);
+        }else{
+            el.classList.remove(animateClass)
         }
     })
 }

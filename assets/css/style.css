@@ -68,7 +68,13 @@ button.button.btn-normal:hover {
     background-attachment: fixed;
     object-fit: cover;
 }
-
+footer  a{
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+    color:white
+}
 
 /* Header svg */
 
