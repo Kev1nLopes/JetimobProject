@@ -6,7 +6,9 @@
     --basic-green: #1dbba2;
     --strong-green: #10816e;
 }
-
+.container{
+    overflow: hidden;
+}
 .navbar-item a {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -75,7 +77,9 @@ footer a:hover{
     text-decoration: underline;
     color:white
 }
-
+#portais-id img{
+    filter: grayscale(1);
+}
 /* Header svg */
 
 .custom-shape-divider-top-1637869278 {
@@ -86,13 +90,23 @@ footer a:hover{
     overflow: hidden;
     line-height: 0;
 }
-
+.burger{
+    display: none;
+    max-width: 30px;
+    width: 100%;
+}
+.burger-bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    margin: 2px;
+}
 
 /*Animacoes */
 
 [data-anime] {
     opacity: 0;
-    transition: .3s;
+    transition: .5s;
 }
 
 [data-anime="left"] {
@@ -101,6 +115,9 @@ footer a:hover{
 
 [data-anime="right"] {
     transform: translate3d(50px, 0, 0);
+}
+[data-anime="bottom"]{
+    transform: translate3d(0, 50px, 0);
 }
 
 [data-anime].animate {
@@ -117,5 +134,33 @@ footer a:hover{
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+  .navbar-brand{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+}
+
+@media (max-width: 1024px){
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .navbar-brand{
+        width: 100%;
+        justify-content: space-around;
     }
 }
