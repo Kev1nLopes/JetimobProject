@@ -6,9 +6,11 @@
     --basic-green: #1dbba2;
     --strong-green: #10816e;
 }
-.container{
+
+.container {
     overflow: hidden;
 }
+
 .navbar-item a {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -70,16 +72,21 @@ button.button.btn-normal:hover {
     background-attachment: fixed;
     object-fit: cover;
 }
-footer  a{
+
+footer a {
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
-    color:white
+    color: white
 }
-#portais-id img{
+
+#portais-id img {
     filter: grayscale(1);
 }
+
+
 /* Header svg */
 
 .custom-shape-divider-top-1637869278 {
@@ -90,17 +97,21 @@ footer a:hover{
     overflow: hidden;
     line-height: 0;
 }
-.burger{
+
+.burger {
     display: none;
     max-width: 30px;
     width: 100%;
+    cursor: pointer;
 }
-.burger-bar{
+
+.burger-bar {
     height: 3px;
     width: 100%;
     background-color: white;
     margin: 2px;
 }
+
 
 /*Animacoes */
 
@@ -116,7 +127,8 @@ footer a:hover{
 [data-anime="right"] {
     transform: translate3d(50px, 0, 0);
 }
-[data-anime="bottom"]{
+
+[data-anime="bottom"] {
     transform: translate3d(0, 50px, 0);
 }
 
@@ -137,29 +149,26 @@ footer a:hover{
     }
 }
 
-
 @media (max-width: 768px) {
-  .navbar-brand{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-  }
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-@media (max-width: 1024px){
-    .menu{
+@media (max-width: 1024px) {
+    .menu {
         display: none;
     }
-    .burger{
+    .burger {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
     }
-    .navbar-brand{
+    .navbar-brand {
         width: 100%;
         justify-content: space-around;
     }
