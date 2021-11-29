@@ -2,6 +2,12 @@
     font-family: 'Montserrat';
 }
 
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
 :root {
     --basic-green: #1dbba2;
     --strong-green: #10816e;
@@ -29,14 +35,6 @@
 .strong-green {
     color: #10917C;
     font-weight: 500;
-}
-
-main>section::before {
-    background-image: url('../img/waves.svg');
-    height: 80px;
-    width: 100%;
-    position: absolute;
-    z-index: 10;
 }
 
 button.button.btn-test:hover {
@@ -89,15 +87,6 @@ footer a:hover {
 
 /* Header svg */
 
-.custom-shape-divider-top-1637869278 {
-    position: absolute;
-    bottom: 30;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
 .burger {
     display: none;
     max-width: 30px;
@@ -110,6 +99,56 @@ footer a:hover {
     width: 100%;
     background-color: white;
     margin: 2px;
+}
+
+.mobile-menu {
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.mobile-menu ul {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+.mobile-menu ul a {
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+.mobile-x {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: auto;
+    right: 30px;
+    color: #000;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.mobile-x .line {
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 1.8s;
 }
 
 

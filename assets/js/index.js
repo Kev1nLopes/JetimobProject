@@ -1,5 +1,6 @@
 let c = (el) => document.querySelector(el);
 let cs = (el) => document.querySelectorAll(el);
+let aux = false;
 
 const debounce = (func, delay) => {
     let debounceTimer;
@@ -30,14 +31,32 @@ function animeScroll() {
 }
 
 function menuBar() {
-
+    let mobileMenu = c('.mobile-menu');
+    let lines = cs('.mobile-x .line');
+    mobileMenu.style.opacity = 1;
+    mobileMenu.style.width = '100%';
+    mobileMenu.style.zIndex = "1";
+    lines[0].style.transform = "rotate(50deg)";
+    lines[1].style.transform = "rotate(-50deg)";
 }
+
+function closeMenuBar() {
+    let mobileMenu = c('.mobile-menu');
+    let lines = cs('.mobile-x .line');
+    mobileMenu.style.opacity = 0;
+    mobileMenu.style.width = '0%';
+    mobileMenu.style.zIndex = "1";
+    lines[0].style.transform = "rotate(0deg)";
+    lines[1].style.transform = "rotate(0deg)";
+}
+
 let burger = c('.burger');
-burger.addEventListener('click', menuBar)
+let mobileX = c('.mobile-x');
+burger.addEventListener('click', () => { menuBar() });
+mobileX.addEventListener('click', () => { closeMenuBar() });
 
 
 
-window.onload(animeScroll())
 
 
 //<element>.offsetTop retorna a distancia do elemento ao topo
