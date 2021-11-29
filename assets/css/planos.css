@@ -1,0 +1,24 @@
+* {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --basic-color: #12CFB2;
+    --strong-color: #0E4C59;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--strong-color), var(--basic-color));
+}
+
+.basic-color {
+    color: var(--basic-color);
+}
+
+.strong-color {
+    color: var(--strong-color);
+}
+
+.button:hover {
+    border-bottom: 3px solid var(--basic-color) !important;
+}

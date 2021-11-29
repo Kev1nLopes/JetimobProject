@@ -36,8 +36,8 @@ function menuBar() {
     mobileMenu.style.opacity = 1;
     mobileMenu.style.width = '100%';
     mobileMenu.style.zIndex = "1";
-    lines[0].style.transform = "rotate(50deg)";
-    lines[1].style.transform = "rotate(-50deg)";
+    lines[0].style.transform = "rotate(130deg)";
+    lines[1].style.transform = "rotate(-130deg)";
 }
 
 function closeMenuBar() {
