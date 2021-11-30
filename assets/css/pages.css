@@ -12,7 +12,7 @@ header {
 }
 
 .column {
-    padding: 10px 0px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .basic-color {
@@ -23,7 +23,7 @@ header {
     color: var(--strong-color);
 }
 
-.button:hover {
+.button.selected {
     border-bottom: 3px solid var(--basic-color) !important;
 }
 
@@ -44,4 +44,8 @@ ul {
 
 .rounded {
     border-radius: 10px;
+}
+
+textarea#text-message {
+    resize: vertical;
 }
