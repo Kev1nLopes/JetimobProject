@@ -53,22 +53,21 @@ function closeMenuBar() {
     lines[1].style.transform = "rotate(0deg)";
 }
 function changeContent(item){
-    let data = item.getAttribute('[data-key]');
+    let data = item.getAttribute('data-key');
     console.log(data);
     if(data == '0'){
         c('.location-column').style.display = 'none';
     
-        cs('.column-crm').forEach(i =>{
+        cs('.crm-column').forEach(i =>{
             i.style.display = 'block';
         })
-    }else if(data == '1'){
-        cs('column-crm').forEach(item =>{
-            item.style.display = 'none'
+    }else{
+        cs('.crm-column').forEach(i=>{
+            i.style.display = 'none'
         })
-        cs('.location-column').forEach(item =>{
-            item.style.display = 'block';
+        c('.location-column').style.display = 'block';
            
-        })
+     
     }
 
 }
