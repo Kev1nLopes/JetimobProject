@@ -7,10 +7,12 @@
     --strong-color: #0E4C59;
 }
 
-header {
+header.basic-blue {
     background-image: linear-gradient(to right, var(--strong-color), var(--basic-color));
 }
-
+.strong-bg-blue{
+    background-color: #0b3081;
+}
 .column {
     padding: 10px 10px 10px 10px;
 }

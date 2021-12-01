@@ -1,5 +1,8 @@
 let c = (el) => document.querySelector(el);
 let cs = (el) => document.querySelectorAll(el);
+let burger = c('.burger');
+let mobileX = c('.mobile-x');
+let btns = cs('[data-key]');
 let aux = false;
 
 const debounce = (func, delay) => {
@@ -49,11 +52,45 @@ function closeMenuBar() {
     lines[0].style.transform = "rotate(0deg)";
     lines[1].style.transform = "rotate(0deg)";
 }
+function changeContent(item){
+    let data = item.getAttribute('[data-key]');
+    console.log(data);
+    if(data == '0'){
+        c('.location-column').style.display = 'none';
+    
+        cs('.column-crm').forEach(i =>{
+            i.style.display = 'block';
+        })
+    }else if(data == '1'){
+        cs('column-crm').forEach(item =>{
+            item.style.display = 'none'
+        })
+        cs('.location-column').forEach(item =>{
+            item.style.display = 'block';
+           
+        })
+    }
 
-let burger = c('.burger');
-let mobileX = c('.mobile-x');
+}
+
+function changePlan(item){
+        if(!item.classList.contains('selected')){
+            c('.selected[data-key]').classList.remove('selected');
+            item.classList.add('selected');
+            changeContent(item);
+        }
+
+
+    
+    
+}
+
 burger.addEventListener('click', () => { menuBar() });
 mobileX.addEventListener('click', () => { closeMenuBar() });
+btns.forEach(item =>{
+    item.addEventListener('click', ()=>{ changePlan(item) });
+})
+
 
 
 
