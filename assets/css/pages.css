@@ -19,6 +19,11 @@ header {
     color: var(--basic-color);
 }
 
+h4.mt-6,
+i.fas.fa-puzzle:hover {
+    cursor: pointer;
+}
+
 .strong-color {
     color: var(--strong-color);
 }

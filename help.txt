@@ -1,0 +1,130 @@
+       <!-- Site imobiliario para captar mais leads -->
+
+
+        <section class="has-background-grey-lighter">
+            <div class="container has-text-centered pb-6">
+                <h2 class="basic-green pt-6" style="font-size: 42px;"><strong class="strong-green">Site imobiliario</strong> para captar mais leads </h2>
+                <blockquote class="svg-txt mt-3">Desenvolvido para que você receba mais visitas e aumente suas conversões</blockquote>
+                <div class="columns" style="margin-top: 80px; width: 100%;">
+                    <div class="column">
+                        <div class="columns">
+                            <article class="column is-flex has-text-left" style="width: 100%;">
+                                <div class="" data-anime="left">
+                                    <i class="fab fa-google basic-green" style="font-size: 30px; margin: 0px 20px"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Otimizado para SEO <br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Desenvolvido para um melhor <strong class="open-sans svg-txt" style="font-weight: 500;">posicionamento no Google</strong> </span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns ">
+                            <article class="column is-flex has-text-left ">
+                                <div class="" data-anime="left">
+                                    <i class="far fa-window-maximize basic-green" style="font-size: 30px; margin: 0px 20px"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Responsivo<br /><span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">A melhor visualização em <strong class="open-sans svg-txt" style="font-weight: 500;">qualquer dispositivo</strong> </span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns ">
+                            <article class="column is-flex has-text-left ">
+                                <div class="" data-anime="left">
+                                    <i class="fas fa-cogs basic-green" style="font-size: 30px; margin: 0px 20px"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Personalizável <br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Liberdade para você deixa-lo com a cara do seu negócio</span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns ">
+                            <article class="column is-flex has-text-left ">
+                                <div class="" data-anime="left">
+                                    <i class="fas fa-lock basic-green" style="font-size: 30px; margin: 0px 20px"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Seguro<br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Seu site com <strong class="open-sans svg-txt" style="font-weight: 500;">certificado digital SSL</strong></span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns ">
+                            <article class="column is-flex has-text-left ">
+                                <div class="" data-anime="left">
+                                    <i class="far fa-comment-dots basic-green" style="font-size: 30px; margin: 0px 20px"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Chat<br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Atenda seus clientes em <strong class="open-sans svg-txt" style="font-weight: 500;">tempo real</strong></span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns ">
+                            <article class="column is-flex has-text-left ">
+                                <div class="" data-anime="left">
+                                    <i class="fab fa-whatsapp basic-green" style="font-size: 30px; margin: 0px 20px"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">WhatsApp <br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Integrado ao <strong class="open-sans svg-txt" style="font-weight: 500;">WhatsApp e outras redes sociais </strong></span>
+                                </h4>
+                            </article>
+                        </div>
+                    </div>
+
+
+
+                    <div class="column" style="width: 100%;" data-anime="right">
+                        <img src="/assets/img/jetimob_site-imobiliario-01-768x435.png.webp " alt=" " style="max-width: 768px; width: 100%; height: 435px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+            <!-- JetPage exclusividade Jetimob -->
+
+        <section class="pb-5">
+            <div class="container has-text-centered is-flex is-justify-content-center is-flex-direction-column is-align-items-center">
+                <h2 class="basic-green" style="font-size: 42px;"><strong class="strong-green">JetPage </strong>exclusividade Jetimob</h2>
+                <blockquote class="svg-txt"> Uma ferramenta inovadora para o relacionamento entre clientes e corretores de imovies</blockquote>
+                <div class="columns mt-6" style="width: 100%;">
+                    <div class="column">
+                        <div class="columns">
+                            <article class="column is-flex is-justify-content-flex-start has-text-left">
+                                <div class="" data-anime="left">
+                                    <i class="fas fa-crosshairs basic-green" style="font-size: 30px; margin: 0 20px;"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Mais foco nos imoveis <br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Acesso aos imoveis selecionados, sem distracoes</span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns">
+                            <article class="column is-flex is-justify-content-flex-start has-text-left">
+                                <div class="" data-anime="left">
+                                    <i class="far fa-calendar-alt basic-green" style="font-size: 30px; margin: 0 20px;"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Agendamento de visitas <br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Cliente pode sugerir data e hora em um clique</span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns">
+                            <article class="column is-flex is-justify-content-flex-start has-text-left">
+                                <div class="" data-anime="left">
+                                    <i class="far fa-trash-alt basic-green" style="font-size: 30px; margin: 0 20px;"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Descarte de imoveis <br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">O cliente e corretor em busca do imovel ideal</span>
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="columns">
+                            <article class="column is-flex is-justify-content-flex-start has-text-left">
+                                <div class="" data-anime="left">
+                                    <i class="far fa-comment-dots basic-green" style="font-size: 30px; margin: 0 20px;"></i>
+                                </div>
+                                <h4 class="open-sans svg-text" style="font-weight: 500; font-size: 22px; line-height: 25px;">Envio de mensagens<br /> <span style="font-weight: 300; font-size: 16px;" class="open-sans svg-txt">Praticidade na interacao entre cliente e corretor</span>
+                                </h4>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="/assets/img/jetimob_jetpage-01-768x428.png.webp" alt="" width="768px" height="428px">
+                    </div>
+                </div>
+
+                <button class="button is-large is-success btn-normal p-5" style="width: 100%; max-width: 350px; border-radius: 10px; font-size: 16px; "><strong
+                    style="font-weight: 500;">AGENDAR DEMONSTRACAO</strong></button>
+
+        </section>
