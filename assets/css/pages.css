@@ -56,3 +56,12 @@ ul {
 textarea#text-message {
     resize: vertical;
 }
+.plan-hiden+ul{
+    transition: 0.2s;
+    height: 180px;
+   
+}
+.especial+ul{
+    height: 200px;
+    transition: 0.2s;
+}

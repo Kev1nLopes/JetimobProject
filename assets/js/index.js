@@ -3,6 +3,7 @@ let cs = (el) => document.querySelectorAll(el);
 let burger = c('.burger');
 let mobileX = c('.mobile-x');
 let btns = cs('[data-key]');
+let plans = cs('.plan-hiden');
 let aux = false;
 
 const debounce = (func, delay) => {
@@ -54,7 +55,6 @@ function closeMenuBar() {
 }
 function changeContent(item){
     let data = item.getAttribute('data-key');
-    console.log(data);
     if(data == '0'){
         c('.location-column').style.display = 'none';
     
@@ -83,13 +83,33 @@ function changePlan(item){
     
     
 }
+function hidePlan(item){
+    aux = !aux;
+    let hide = item.nextElementSibling;
+    if(aux == true){
+        hide.style.height = '0px';
+        hide.style.opacity = '0';
+        // setInterval(()=>{
+        //     hide.style.display = 'none';
+        // }, 1000)
+    }else{
+        // hide.style.display = 'block';
+        hide.style.height = '180px';
+        hide.style.opacity = '1';
+
+       
+    }
+    }
+
 
 burger.addEventListener('click', () => { menuBar() });
 mobileX.addEventListener('click', () => { closeMenuBar() });
 btns.forEach(item =>{
     item.addEventListener('click', ()=>{ changePlan(item) });
 })
-
+plans.forEach(item=>{
+    item.addEventListener('click', ()=>{ hidePlan(item)});
+})
 
 
 
