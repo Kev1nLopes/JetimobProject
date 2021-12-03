@@ -37,9 +37,9 @@ function animeScroll() {
 function menuBar() {
     let mobileMenu = c('.mobile-menu');
     let lines = cs('.mobile-x .line');
-    mobileMenu.style.opacity = 1;
+    mobileMenu.style.opacity = '1';
     mobileMenu.style.width = '100%';
-    mobileMenu.style.zIndex = "1";
+    mobileMenu.style.zIndex = "13";
     lines[0].style.transform = "rotate(130deg)";
     lines[1].style.transform = "rotate(-130deg)";
 }
@@ -53,62 +53,65 @@ function closeMenuBar() {
     lines[0].style.transform = "rotate(0deg)";
     lines[1].style.transform = "rotate(0deg)";
 }
-function changeContent(item){
+
+function changeContent(item) {
     let data = item.getAttribute('data-key');
-    if(data == '0'){
+    if (data == '0') {
         c('.location-column').style.display = 'none';
-    
-        cs('.crm-column').forEach(i =>{
+
+        cs('.crm-column').forEach(i => {
             i.style.display = 'block';
         })
-    }else{
-        cs('.crm-column').forEach(i=>{
+    } else {
+        cs('.crm-column').forEach(i => {
             i.style.display = 'none'
         })
         c('.location-column').style.display = 'block';
-           
-     
+
+
     }
 
 }
 
-function changePlan(item){
-        if(!item.classList.contains('selected')){
-            c('.selected[data-key]').classList.remove('selected');
-            item.classList.add('selected');
-            changeContent(item);
-        }
+function changePlan(item) {
+    if (!item.classList.contains('selected')) {
+        c('.selected[data-key]').classList.remove('selected');
+        item.classList.add('selected');
+        changeContent(item);
+    }
 
 
-    
-    
+
+
 }
-function hidePlan(item){
+
+function hidePlan(item) {
     aux = !aux;
     let hide = item.nextElementSibling;
-    if(aux == true){
+    if (aux == true) {
         hide.style.height = '0px';
         hide.style.opacity = '0';
         // setInterval(()=>{
         //     hide.style.display = 'none';
         // }, 1000)
-    }else{
+    } else {
         // hide.style.display = 'block';
-        hide.style.height = '180px';
+        hide.style.height = '150px';
+        hide.style.marginBottom = '40px';
         hide.style.opacity = '1';
 
-       
+
     }
-    }
+}
 
 
 burger.addEventListener('click', () => { menuBar() });
 mobileX.addEventListener('click', () => { closeMenuBar() });
-btns.forEach(item =>{
-    item.addEventListener('click', ()=>{ changePlan(item) });
+btns.forEach(item => {
+    item.addEventListener('click', () => { changePlan(item) });
 })
-plans.forEach(item=>{
-    item.addEventListener('click', ()=>{ hidePlan(item)});
+plans.forEach(item => {
+    item.addEventListener('click', () => { hidePlan(item) });
 })
 
 

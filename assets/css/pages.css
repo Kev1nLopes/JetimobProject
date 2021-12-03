@@ -7,14 +7,33 @@
     --strong-color: #0E4C59;
 }
 
-header.basic-blue {
-    background-image: linear-gradient(to right, var(--strong-color), var(--basic-color));
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
 }
-.strong-bg-blue{
+
+.basic-blue {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--strong-color), var(--basic-color));
+    opacity: 0.9;
+}
+
+.strong-bg-blue {
     background-color: #0b3081;
 }
+
 .column {
     padding: 10px 10px 10px 10px;
+}
+
+.basic-bg {
+    background-image: linear-gradient(to right, var(--strong-color), var(--basic-color));
 }
 
 .basic-color {
@@ -56,12 +75,17 @@ ul {
 textarea#text-message {
     resize: vertical;
 }
-.plan-hiden+ul{
+
+.plan-hiden:hover {
+    cursor: pointer;
+}
+
+.plan-hiden+ul {
     transition: 0.2s;
     height: 180px;
-   
 }
-.especial+ul{
+
+.especial+ul {
     height: 200px;
     transition: 0.2s;
 }
