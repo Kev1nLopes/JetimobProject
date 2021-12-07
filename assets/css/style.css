@@ -43,8 +43,11 @@ video {
     color: #10917C;
     font-weight: 500;
 }
-
-button.button.btn-test:hover {
+#btn-test button{
+    background-color:  var(--basic-green);
+    border: 1px solid var(--basic-green);
+}
+#btn-test button:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;

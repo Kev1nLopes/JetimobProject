@@ -39,7 +39,7 @@ function menuBar() {
     let lines = cs('.mobile-x .line');
     mobileMenu.style.opacity = '1';
     mobileMenu.style.width = '100%';
-    mobileMenu.style.zIndex = "13";
+    mobileMenu.style.zIndex = "16";
     lines[0].style.transform = "rotate(130deg)";
     lines[1].style.transform = "rotate(-130deg)";
 }

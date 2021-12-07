@@ -67,6 +67,26 @@ ul {
     padding: 0.3em 0.5em;
     font-size: 16px;
 }
+#btn-test button{
+    background-color:  var(--basic-green);
+}
+#btn-test button:hover {
+    animation-name: btnhover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: transparent;
+    border: 3px solid var(--basic-green);
+}
+#btn-gest button{
+     background-color: #ECA431;;
+}
+#btn-gest button:hover {
+    animation-name: btnhover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: transparent;
+    border: 2px solid var(--basic-green);
+}
 
 .rounded {
     border-radius: 10px;
