@@ -28,9 +28,9 @@ function animeScroll() {
     target.forEach((el) => {
         if ((windowTop) > el.getBoundingClientRect().top) {
             el.classList.add(animateClass);
-        } else {
-            el.classList.remove(animateClass)
-        }
+        }// else {
+        //     el.classList.remove(animateClass)
+        // }
     })
 }
 
