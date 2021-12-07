@@ -53,7 +53,9 @@ button.button.btn-test:hover {
     -webkit-box-shadow: 0px 0px 10px 3px #000000;
     box-shadow: 0px 0px 10px 3px #000000;
 }
-
+button:hover{
+    cursor: pointer;
+}
 button.button.btn-normal {
     -webkit-box-shadow: 0px 0px 15px -4px #000000;
     box-shadow: 0px 0px 15px -4px #000000;
