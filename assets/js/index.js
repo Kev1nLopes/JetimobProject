@@ -104,7 +104,6 @@ function hidePlan(item) {
     }
 }
 
-
 burger.addEventListener('click', () => { menuBar() });
 mobileX.addEventListener('click', () => { closeMenuBar() });
 btns.forEach(item => {
