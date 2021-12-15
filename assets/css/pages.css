@@ -27,6 +27,7 @@ video {
 .strong-bg-blue {
     background-color: #0b3081;
 }
+
 a.strong-bg-blue:hover {
     background-color: #092664 !important;
 }
@@ -70,9 +71,11 @@ ul {
     padding: 0.3em 0.5em;
     font-size: 16px;
 }
-.btn-test{
-    background-color:  var(--basic-green);
+
+.btn-test {
+    background-color: var(--basic-green);
 }
+
 a.btn-test:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
@@ -80,11 +83,12 @@ a.btn-test:hover {
     background-color: transparent;
     border: 3px solid var(--basic-green);
 }
-a.btn-gest{
-     background-color: #ECA431;
-     border: 1px solid #ECA431;
-    
+
+a.btn-gest {
+    background-color: #ECA431;
+    border: 1px solid #ECA431;
 }
+
 a.btn-gest:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
@@ -115,7 +119,21 @@ textarea#text-message {
     transition: 0.2s;
 }
 
+.crm-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 30px;
+}
 
+.crm-column {
+    margin: 10px;
+}
+
+.crm-column li,
+.crm-column i {
+    margin-left: 1%;
+}
 
 [data-anime] {
     opacity: 0;
