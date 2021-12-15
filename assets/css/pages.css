@@ -67,20 +67,20 @@ ul {
     padding: 0.3em 0.5em;
     font-size: 16px;
 }
-#btn-test button{
+.btn-test{
     background-color:  var(--basic-green);
 }
-#btn-test button:hover {
+a.btn-test:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     background-color: transparent;
     border: 3px solid var(--basic-green);
 }
-#btn-gest button{
+a.btn-gest{
      background-color: #ECA431;;
 }
-#btn-gest button:hover {
+a.btn-gest:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;

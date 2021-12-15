@@ -43,11 +43,11 @@ video {
     color: #10917C;
     font-weight: 500;
 }
-#btn-test button{
+a.btn-test{
     background-color:  var(--basic-green);
     border: 1px solid var(--basic-green);
 }
-#btn-test button:hover {
+a.btn-test:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -57,12 +57,12 @@ video {
     box-shadow: 0px 0px 10px 3px #000000;
 }
 
-button.button.btn-normal {
+a.button.btn-normal {
     -webkit-box-shadow: 0px 0px 15px -4px #000000;
     box-shadow: 0px 0px 15px -4px #000000;
 }
 
-button.button.btn-normal:hover {
+a.button.btn-normal:hover {
     background-color: var(--strong-green);
     border: 1px solid var(--basic-green);
 }
