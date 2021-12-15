@@ -27,6 +27,9 @@ video {
 .strong-bg-blue {
     background-color: #0b3081;
 }
+a.strong-bg-blue:hover {
+    background-color: #092664 !important;
+}
 
 .column {
     padding: 10px 10px 10px 10px;
@@ -78,7 +81,9 @@ a.btn-test:hover {
     border: 3px solid var(--basic-green);
 }
 a.btn-gest{
-     background-color: #ECA431;;
+     background-color: #ECA431;
+     border: 1px solid #ECA431;
+    
 }
 a.btn-gest:hover {
     animation-name: btnhover;
@@ -108,4 +113,65 @@ textarea#text-message {
 .especial+ul {
     height: 200px;
     transition: 0.2s;
+}
+
+
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes btnhover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-brand {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
