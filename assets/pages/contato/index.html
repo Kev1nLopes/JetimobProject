@@ -14,7 +14,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800&family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800&family=Open+Sans:wght@300;500&display=swap"
+        rel="stylesheet">
     <!-- CDN BULMA -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="../../css/style.css">
@@ -22,7 +24,26 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/d50e3b900c.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    input:hover {
+        background-color: white !important;
+        box-shadow: 0 0 8px 0 #00000036 !important;
+    }
 
+    textarea:hover {
+        background-color: white !important;
+        box-shadow: 0 0 8px 0 #00000036 !important;
+    }
+
+    .time-info:hover {
+        background-color: #EEEEEE !important;
+    }
+
+    .time-info {
+        width: 300px;
+    }
+
+</style>
 <body>
     <header class="basic-bg">
         <div class="mobile-menu">
@@ -41,10 +62,12 @@
             </div>
         </div>
         <div class="container is-flex is-flex-direction-column is-justify-content-space-between is-align-items-center">
-            <nav class="is-flex is-justify-content-space-evenly is-align-items-center" style="width: 100%; height: 140px;">
+            <nav class="is-flex is-justify-content-space-evenly is-align-items-center"
+                style="width: 100%; height: 140px;">
                 <div class="navbar-brand">
                     <a href="/index.html">
-                        <img src="../../img/logo-jetimob-branco.png" alt="jetimob-logo" style="max-height: 60px; height: 100%" class="py-4 mx-auto" />
+                        <img src="../../img/logo-jetimob-branco.png" alt="jetimob-logo"
+                            style="max-height: 60px; height: 100%" class="py-4 mx-auto" />
                     </a>
                     <div class="burger">
                         <div class="burger-bar"></div>
@@ -66,7 +89,8 @@
                             <a href="../crm/index.html" class="has-text-white has-text-centered">CRM</a>
                         </li>
                         <li class="">
-                            <a href="../gestaolocacao/index.html" class="has-text-white has-text-centered">Gestao locação</a>
+                            <a href="../gestaolocacao/index.html" class="has-text-white has-text-centered">Gestao
+                                locação</a>
                         </li>
                         <li class="">
                             <a href="./index.html" class="has-text-white has-text-centered">Contato</a>
@@ -75,50 +99,61 @@
                             <a href="../login/index.html" class="has-text-white has-text-centered">Login</a>
                         </li>
                         <li class="">
-                            <a href="../experimente/index.html" class="has-text-white has-text-centered">Experimente grátis</a>
+                            <a href="../experimente/index.html" class="has-text-white has-text-centered">Experimente
+                                grátis</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-
     <main>
         <section>
-            <div class="container">
-                <h1 class="is-size-1 has-text-centered basic-color py-6" style="font-weight: 200;"><strong class="basic-color " style="font-weight: 500;">Fale com</strong> a equipe Jetimob</h1>
-                <div class="columns m-4">
-                    <div class="column is-three-fifths px-6" style="background-color: #EEEEEE; border-radius: 30px">
-                        <form method="POST" action="receber.php" class="m-6">
-                            <label for="name" style="display: block;">Nome</label>
-                            <input type="text" name="name" id="input-name" style="width: 100%; height: 55px;">
-                            <div class="columns">
+            <div class="container mx-auto" >
+                <h1 class="is-size-1 has-text-centered basic-color mt-5" style="font-weight: 200;"><strong
+                        class="basic-color " style="font-weight: 500;">Fale com</strong> a equipe Jetimob</h1>
+                <div class="columns my-5 is-flex is-justify-content-center contato-column mx-auto">
+                    <div class="column is-half form-column"
+                        style="background-color: white; border-radius: 12px; box-shadow: rgb(0 0 0 / 15%) 0px 5px 13px 10px;">
+                        <form method="POST" action="receber.php" style="padding: 6px;">
+                            <label for="name" style="display: block;" class="mt-5">Nome</label>
+                            <input type="text" class="mb-5" name="name" id="name"
+                                style="width: 100%; height: 55px; border: none; background-color: #EEEEEE;">
+                            <div class="columns mt-5">
                                 <div class="column mt-3">
-                                    <label for="email" style="display: block;">Email<br/>
-                                        <input type="email" name="email" id="input-email" style="width: 100%; height: 55px;">
+                                    <label for="email" style="display: block;">Email<br />
+                                        <input type="email" name="email" id="email"
+                                            style="width: 100%; height: 55px; border: none; background-color: #EEEEEE;">
                                     </label>
                                 </div>
                                 <div class="column mt-3">
                                     <label for="tel" style="display: block;">Telefone
-                                        <input type="tel" name="tel" id="input-telefone" style="width: 100%; height: 55px;">
-                                        </label>
+                                        <input type="tel" name="tel" id="tel"
+                                            style="width: 100%; height: 55px; border: none; background-color: #EEEEEE;">
+                                    </label>
                                 </div>
 
                             </div>
 
 
-                            <label for="message">Mensagem</label><br/>
-                            <textarea name="message" id="text-message" cols="30" rows="10" style="width: 100%; height: 150px;">
+                            <label for="message">Mensagem</label>
+                            <textarea class="mt-1" name="message" id="message" cols="30" rows="10"
+                                style="width: 100%; height: 150px; border: none; background-color: #EEEEEE;">
 
                             </textarea>
-                            <button class="button is-success is-large mt-4" style="width: 100%;">Enviar</button>
+                            <button class="button is-large mt-4" id="btn-contato" style="width: 100%; background-color: #5EC3AC; color: white; position: relative;">
+                                Enviar <i class="fas fa-chevron-circle-right" style="position: absolute; right: 30px; color: #67D1C1;"></i>
+                            </button>
                         </form>
                     </div>
-                    <div class="column  ml-6 " style="background-color: #EEEEEE; border-radius: 30px; height: 200px;">
-                        <div class="p-4">
-                            <i class=" far fa-clock is-size-1 basic-color mt-5"></i>
-                            <p><strong class="has-text-grey-light mt-2" style="font-size: 20px; font-weight: 500; ">Segunda a sexta das 9h às 12h e das 13h30min às 18h</strong></p>
-                        </div>
+                    <div class="column is-one-third time-info"
+                        style="background-color: white; height: 200px; border-radius: 12px; box-shadow: rgb(0 0 0 / 15%) 0px 5px 43px 3px; margin-left: 3%;">
+                            <div class="py-4">
+                                <i class=" far fa-clock is-size-1 basic-color mt-5"></i>
+                                <p><strong class="has-text-grey-light mt-2"
+                                        style="font-size: 20px; font-weight: 500; ">Segunda a sexta das 9h às 12h e das
+                                        13h30min às 18h</strong></p>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -127,47 +162,62 @@
 
 
 
-    <footer class="has-background-grey-dark">
-        <div class="container has-text-centered is-flex is-justify-content-center is-align-items-center p-3 " style="width: 100%; ">
-            <div class="columns " style="width: 90%; ">
-                <div class="column is-flex is-flex-direction-column ">
-                    <a href="../../../index.html">
-                        <img src="../../img/logo-jetimob-branco.png " alt="logotipo-jetimob " width="370" height="72" style="max-width: 370px; width: 80%; ">
-                    </a>
+    <footer class="" style="background-color: rgb(46,52,59) !important;">
+        <div class="container has-text-centered is-flex is-justify-content-center is-align-items-center p-3" style="width: 100%;">
+            <div class="columns mt-4" style="width: 90%;">
+                <div class="column is-flex is-flex-direction-column">
+                    <a href="./../../../index.html"><img src="../../img/logo-jetimob-branco.png" alt="logotipo-jetimob" width="370" height="72" style="max-width: 370px; width: 80%;"></a>
                     <span class="is-flex is-align-self-start ">
-                        <i class="fab fa-facebook-f has-text-white " style="font-size: 24px; margin: 10px; "></i>
-                        <i class="fab fa-instagram has-text-white " style="font-size: 24px; margin: 10px; "></i>
+                        <a href="https://www.facebook.com/jetimob"><i class="fab fa-facebook-f has-text-white" style="font-size: 24px; margin: 10px;" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/jet.office/"><i class="fab fa-instagram has-text-white" style="font-size: 24px; margin: 10px;" aria-hidden="true"></i></a>
                     </span>
-
-
                     <!-- instagran icon -->
                     <!-- facebook icon -->
                 </div>
-                <div class="column has-text-left ">
-                    <p class="svg-txt ">Sites</p>
-                    <a href="../site/index.html" style="display: block; height: 48px; line-height: 48px;">Site para imobiliária</a>
+                <div class="column has-text-left">
+                    <ul>
+                        <li><p class="svg-txt">Sites</p></li>
+                        <li><p style="font-size: 12px;"><a href="../site/index.html">Site para imobiliária</a></p></li>
+                    </ul>
                 </div>
-                <div class="column has-text-left ">
-                    <p class="svg-txt ">Sistemas</p>
-                    <a href="../crm/index.html" style="display: block; height: 48px;line-height: 48px; ">CRM imobiliário</a>
-                    <a href="../crm/index.html" style="display: block; height: 48px;line-height: 48px;">Sistema para imobiliária</a>
-                    <a href="../gestaolocacao/index.html" style="display: block;height: 48px;line-height: 48px;">Software gestão locação</a>
+                <div class="column has-text-left">
+                    <ul>
+                        <li><p class="svg-txt">Sistemas</p></li>
+                        <li><p style="font-size: 12px;"><a href="../crm/index.html">CRM imobiliário</a></p></li>
+                        <li><p style="font-size: 12px;"><a href="../crm/index.html">Sistema para imobiliária</a></p></li>
+                        <li><p style="font-size: 12px;"><a href="../gestaolocacao/index.html">Software gestão locação</a></p></li>
+                    </ul>
                 </div>
-                <div class="column has-text-left ">
-                    <p class="svg-txt ">Jetimob</p>
-                    <a href="../planos/index.html" style="display: block; height: 48px;line-height: 48px;">Planos</a>
-                    <a href="../contato/index.html" style="display: block;height: 48px;line-height: 48px;">Contato</a>
-                    <a href="../planos/index.html" style="display: block; height: 48px;line-height: 48px;">Blog</a>
-                    <a href="../planos/index.html" style="display: block; height: 48px;line-height: 48px;">Materiais para baixar</a>
+                <div class="column has-text-left">
+                    <ul>
+                        <li><p class="svg-txt">Jetimob</p></li>
+                        <li><p style="font-size: 12px;"><a href="../planos/index.html">Planos</a></p></li>
+                        <li><p style="font-size: 12px;"><a href="../contato/index.html">Contato</a></p></li>
+                        <li><p style="font-size: 12px;"><a href="https://www.jetimob.com/blog/">Blog</a></p></li>
+                        <li><p style="font-size: 12px;"><a href="https://www.jetimob.com/blog/materiais-educativos/">Materiais para baixar</a></p></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="jetimob-about has-text-centered py-5" style="background-color: #1A1B1E; width: 100%;font-size: 13px;">
-        <p class="py-3"><span class="mx-3">Jetimob ®</span> | <span class="mx-3"> Todos os direitos reservados</span> | <span class="mx-3">CNPJ 12.544.265/0001-30  </span> | <a href="../termos/index.html" class="mx-3 svg-text">Termos de uso</a> | <a href="../politica&privacidade/index.html"
-                class="mx-3 svg-text">Política de privacidade</a></p>
-        <p><span class="mx-3">Rua Appel, 347 </span><span class="mx-3"> Nossa Senhora de Fátima  </span> <span>Santa Maria  RS</span><span class="mx-3">  CEP 97015-030</span></p>
-
+    <div class="jetimob-about has-text-centered " style="background-color: #1A1B1E; width: 100%;  font-size: 13px; padding: 9px;">
+        <p class="" style="font-size: 10px; color: rgb(170,170,170)!important;">
+            <span class="mx-3">Jetimob ®</span>
+             | 
+            <span class="mx-3"> Todos os direitos reservados</span>
+             | 
+            <span class="mx-3">CNPJ 12.544.265/0001-30  </span>
+             | 
+            <a href="../termos/index.html" class="mx-3 svg-text" style="color: rgb(170,170,170)!important;">Termos de uso</a>
+             | 
+            <a href="../politica&privacidade/index.html" class="mx-3 svg-text" style="color: rgb(170,170,170)!important;">Política de privacidade</a>
+        </p>
+        <p style="font-size: 10px; display: flex; flex-flow: row; align-items: flex-end; justify-content: center; color: rgb(170,170,170)!important;">
+            <span class="m-1">Rua Appel, 347 </span>
+            <span class="m-1"> Nossa Senhora de Fátima  </span>
+            <span class="m-1">Santa Maria  RS</span>
+            <span class="m-1">  CEP 97015-030</span>
+        </p>
     </div>
 
     <script src="../../js/index.js "></script>

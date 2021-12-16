@@ -90,7 +90,7 @@ a.btn-gest:hover {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     background-color: transparent;
-    border: 2px solid var(--basic-green);
+    border: 3px solid var(--basic-green);
 }
 
 .rounded {
@@ -113,6 +113,11 @@ textarea#text-message {
 .especial+ul {
     height: 200px;
     transition: 0.2s;
+}
+#btn-contato:hover{
+    background-color: white !important;
+    border: 2px solid #5EC3AC;
+    color: #5EC3AC !important;
 }
 
 
@@ -158,6 +163,20 @@ textarea#text-message {
         justify-content: center;
         align-items: center;
     }
+    .time-info{
+        width: 90% !important;
+        margin: 3%;
+    }
+    .contato-column{
+        display: flex;
+        flex-direction: column;
+        width: 90% !important;
+    }
+    input#name,
+    input#email,
+    form.column{
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -174,4 +193,27 @@ textarea#text-message {
         width: 100%;
         justify-content: space-around;
     }
+    .time-info{
+        width: 90% !important;
+        margin: 3%;
+
+
+       
+    }
+    .contato-column{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        align-items: center;
+    }
+    .contato-column .column{
+        width: 90%;
+    }
+    input#name,
+    input#email,
+    form.column{
+        width: 100% !important;
+    }
 }
+
