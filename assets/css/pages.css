@@ -118,7 +118,9 @@ textarea#text-message {
     height: 200px;
     transition: 0.2s;
 }
-
+.menu-info>div:hover{
+    box-shadow:0px 4px 15px -1px rgba(0,0,0,0.3)
+}
 #btn-contato:hover {
     background-color: white !important;
     border: 2px solid #5EC3AC;
@@ -141,7 +143,9 @@ textarea#text-message {
 .crm-column i {
     margin-left: 1%;
 }
-
+.location-column{
+    justify-self: center;
+}
 [data-anime] {
     opacity: 0;
     transition: .5s;
@@ -196,6 +200,10 @@ textarea#text-message {
     input#email,
     form.column {
         width: 100% !important;
+    }
+    .menu-info{
+        display: flex;
+        flex-direction: column;
     }
 }
 
