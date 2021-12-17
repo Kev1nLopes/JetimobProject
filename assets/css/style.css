@@ -5,7 +5,7 @@
 :root {
     --basic-green: #1dbba2;
     --strong-green: #10816e;
-    --strong-blue: #0b3081;
+    --strong-blue: rgb(7, 7, 220);
 }
 
 heeader {
@@ -43,10 +43,12 @@ video {
     color: #10917C;
     font-weight: 500;
 }
-a.btn-test{
-    background-color:  var(--basic-green);
+
+a.btn-test {
+    background-color: var(--basic-green);
     border: 1px solid var(--basic-green);
 }
+
 a.btn-test:hover {
     animation-name: btnhover;
     animation-duration: 1.5s;
@@ -80,7 +82,7 @@ a.button.btn-normal:hover {
 }
 
 .blue-camad {
-    background-color: rgba(0, 59, 223, 0.7);
+    background-color: rgba(7, 7, 220, 0.7);
     position: absolute;
     z-index: 10;
     width: 100%;
@@ -105,6 +107,7 @@ footer a:hover {
 #portais-id img {
     filter: grayscale(1);
 }
+
 
 /* Header svg */
 
